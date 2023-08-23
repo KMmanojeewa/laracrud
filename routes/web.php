@@ -34,4 +34,6 @@ Route::resource('product', ProductController::class);
 
 
 Route::get('user/{id}', [UserController::class, 'show']);
+Route::get('users/new', [UserController::class, 'create']);
+Route::post('users/save-new-user', [UserController::class, 'save_user']);
 Route::get('users', [UserController::class, 'list']);
